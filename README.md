@@ -6,9 +6,12 @@ Known Issues
 * Google search results don't work
 * Resizing doesn't work
 * Shortcut doesn't work
+* Variables don't work
 
 For bugs, problems, and feature requests, add an issue to the github.
 * https://github.com/anthonyebiner/foxy-calculator
+
+All credit goes to 
 
 
 ## Original Description
