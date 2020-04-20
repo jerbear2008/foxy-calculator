@@ -275,8 +275,8 @@
 			// make it so we can disambiguate "e" later
 			str = str.replace(/([0-9])[eE][+]?([0-9])/g, "$1!e!$2"); // get rid of "+"
 			str = str.replace(/([0-9])[eE][-]([0-9])/g, "$1!e!!$2"); // get rid of "-" (temporarily)
-			// replace "×" with * if preceded and followed by space or digit (NOTE: not converting "x" for now.
-			str = str.replace(/(\s)×(\s)/g, "$1*$2");
+			// replace "ï¿½" with * if preceded and followed by space or digit (NOTE: not converting "x" for now.
+			str = str.replace(/(\s)ï¿½(\s)/g, "$1*$2");
 			// replace "x" with * for "1 x 2", "1x 2", "1 x2", but not "1x2" (simple way to make sure we can pass hex numbers on to google)
 			str = str.replace(/(\s)x(\s)/g, "$1*$2");
 			str = str.replace(/(\d)x(\s)/g, "$1*$2");

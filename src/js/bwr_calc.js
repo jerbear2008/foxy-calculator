@@ -112,9 +112,6 @@ var cCalc = (function (window, document) {
 	var $calcInput,	$calcResults, $calcResultsWrapper;
 	function calcInit(currentWindow) {		
 		background.helperIsInstalled = false;
-		chrome.extension.sendRequest(chromeyCalcHelperId, {"ding": "dong"}, function (response) {
-			background.helperIsInstalled = true;			
-		});
 		// Set window to whatever window was passed to calcInit
 		window = currentWindow;
 		document = window.document;
@@ -139,15 +136,13 @@ var cCalc = (function (window, document) {
 		$(function () {			
 			$calcInput = $("#calcInput").unbind();
 			$calcResults = $("#calcResults").unbind();
-			$calcResultsWrapper = $("#calcResultsWrapper").unbind();			
+			$calcResultsWrapper = $("#calcResultsWrapper").unbind();
 
 			// Restore calculator state
 			calcStore.load();
 
 			// Focus input area
-			$calcInput.focus();				
-
-			$("body").height(0);
+			$calcInput.focus();
 
 			$("#clearAll").unbind().click(function () {
 				// Clear results
@@ -172,9 +167,6 @@ var cCalc = (function (window, document) {
 			}).bind("blur.helperFlag", function () {				
 				// update flag for chekcing if helper extention is isntalled
 				background.helperIsInstalled = false;
-				chrome.extension.sendRequest(chromeyCalcHelperId, {"ding": "dong"}, function (response) {
-					background.helperIsInstalled = true;			
-				});
 			});		
 
 			// Handle enter and arrow keydown events
@@ -202,7 +194,7 @@ var cCalc = (function (window, document) {
 						// Don't change icon unless it exsits (list of possible icons set in background.html)
 						if (iconName in background.icons) {
 							localStorage.useIcon = iconName;
-							chrome.browserAction.setIcon({path: background.icons[iconName]});
+							browser.browserAction.setIcon({path: background.icons[iconName]});
 						}
 					} else if (inputVal.indexOf('cc(') == '0') { // A Chromey Calculator Command
 						// Strip the 'cc(' and ')' from our param here. Make an array of arguments
@@ -573,18 +565,11 @@ var cCalc = (function (window, document) {
 				if (!uri) {
 					queryCallback(input);
 				} else {
-					// Query for result								
-					if (doHelperQuery(queryType)) {
-						// Let Chromey Calculator Enhancer handle query
-						chrome.extension.sendRequest(chromeyCalcHelperId, {queryUri: uri}, function (response) {							
-							queryCallback(response.doc);		
-						});
-					} else {
-						$.ajax({
-							url: uri,
-							success: queryCallback
-						});
-					}
+					// Query for result
+					$.ajax({
+						url: uri,
+						success: queryCallback
+					});
 				}
 			}
 
@@ -1362,7 +1347,6 @@ var cCalc = (function (window, document) {
 		};
 	}());
 	// =====================================================================  /CHECK ME  =================================================================================
-
 	// -----------------------------------------------------------------------
 	// 	Initialize Chromey Calculator
 	// -----------------------------------------------------------------------

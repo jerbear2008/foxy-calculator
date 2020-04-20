@@ -3,9 +3,9 @@
  * Licensed under the MIT License: http://www.opensource.org/licenses/mit-license.php
  */
 (function () {
-	var background = chrome.extension.getBackgroundPage();	
+	var background = browser.extension.getBackgroundPage();
 	if (window != background.calcPopOut) {
 		background.calcPopOut && background.calcPopOut.close();
 	}
-	background.cCalc.init(window);	
+	background.cCalc.init(window);
 }());
