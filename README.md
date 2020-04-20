@@ -11,9 +11,7 @@ For bugs, problems, and feature requests, add an issue to the github.
 * https://github.com/anthonyebiner/foxy-calculator
 
 
-========
-Original Description:
-========
+## Original Description
 
 Math geeks rejoice!
 
