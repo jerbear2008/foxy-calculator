@@ -1,4 +1,18 @@
-Math geeks rejoice! 
+This is a firefox port of the popular Cloudy Calculator Chrome extension!
+
+Known Issues
+* Google search results don't work
+* Resizing doesn't work
+* Shortcut doesn't work
+
+For bugs, problems, and feature requests, add an issue to the github.
+* https://github.com/anthonyebiner/foxy-calculator
+
+========
+Original Description:
+========
+
+Math geeks rejoice!
 
 Inspired by the fantastic calculator build into Google's search engine, Cloudy Calculator handles many of the same kinds of calculations as Google does. In fact, if Cloudy Calculator can't handle a calculation, it asks Google for the result (you'll see a litte "G" to the left of those calculations).
 
