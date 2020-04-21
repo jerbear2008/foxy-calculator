@@ -816,9 +816,10 @@ var cCalc = (function (window, document) {
 			if (!docHtml) {
 				docHtml = $doc.find(".gsrt.vk").html();
 			}
-			// If no result try currency
+
+			// sidebar
 			if (!docHtml) {
-				docHtml = $doc.find(".DFlfde.SwHCTb").html();
+				docHtml = $doc.find(".kno-rdesc").html();
 				console.debug(docHtml);
 			}
 
@@ -876,6 +877,23 @@ var cCalc = (function (window, document) {
 				console.debug(docHtml);
 			}
 
+			//list
+			if (!docHtml) {
+				docHtml = $doc.find(".di3YZe").html();
+				console.debug(docHtml);
+			}
+
+			//rated
+			if (!docHtml) {
+				docHtml = $doc.find(".X5LH0c").html();
+				console.debug(docHtml);
+			}
+
+			//geometry
+			if (!docHtml) {
+				docHtml = $doc.find(".lr-fy-ev").html();
+				console.debug(docHtml);
+			}
 
 			if (docHtml) {
 				docHtml = docHtml.replace(/<sup>(-?[0-9]+)<\/sup>/g, '^$1');
@@ -1386,6 +1404,7 @@ var cCalc = (function (window, document) {
 	// 	Initialize Chromey Calculator
 	// -----------------------------------------------------------------------
 	//calcInit();
+
 	return {
 		init: calcInit,
 		calcCmd: calcCmd,
