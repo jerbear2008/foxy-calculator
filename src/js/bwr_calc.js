@@ -817,9 +817,9 @@ var cCalc = (function (window, document) {
 				docHtml = $doc.find(".gsrt.vk").html();
 			}
 
-			// sidebar
+			//stock
 			if (!docHtml) {
-				docHtml = $doc.find(".kno-rdesc").html();
+				docHtml = $doc.find(".IsqQVc.NprOob").html();
 				console.debug(docHtml);
 			}
 
@@ -828,13 +828,6 @@ var cCalc = (function (window, document) {
 				docHtml = $doc.find(".DFlfde.SwHCTb").html();
 				console.debug(docHtml);
 			}
-
-			//stock
-			if (!docHtml) {
-				docHtml = $doc.find(".IsqQVc.NprOob").html();
-				console.debug(docHtml);
-			}
-
 			//area
 			if (!docHtml) {
 				docHtml = $doc.find(".Z0LcW").html();
@@ -844,6 +837,12 @@ var cCalc = (function (window, document) {
 			//population
 			if (!docHtml) {
 				docHtml = $doc.find(".ayqGOc").html();
+				console.debug(docHtml);
+			}
+
+			// sidebar
+			if (!docHtml) {
+				docHtml = $doc.find(".kno-rdesc").html();
 				console.debug(docHtml);
 			}
 
@@ -868,6 +867,12 @@ var cCalc = (function (window, document) {
 			//calc
 			if (!docHtml) {
 				docHtml = $doc.find(".z7BZJb").html();
+				console.debug(docHtml);
+			}
+
+			//ip
+			if (!docHtml) {
+				docHtml = $doc.find(".MUxGbd.u31kKd").html();
 				console.debug(docHtml);
 			}
 
