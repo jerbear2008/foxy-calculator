@@ -1,18 +1,13 @@
 # foxy-calculator
 
 This is a firefox port of the popular Cloudy Calculator Chrome extension!
-
-Known Issues
-* Google search results don't work
-* Resizing doesn't work
-* Shortcut doesn't work
-* Variables don't work
+In the process of porting this extension, I've fixed much of it's deprecated 
+functionality, including bringing google search results back online.
 
 For bugs, problems, and feature requests, add an issue to the github.
 * https://github.com/anthonyebiner/foxy-calculator
 
-All credit goes to 
-
+All credit goes to the original author bwrobinett for writing this wonderful utility.
 
 ## Original Description
 
@@ -21,14 +16,6 @@ Math geeks rejoice!
 Inspired by the fantastic calculator build into Google's search engine, Cloudy Calculator handles many of the same kinds of calculations as Google does. In fact, if Cloudy Calculator can't handle a calculation, it asks Google for the result (you'll see a litte "G" to the left of those calculations).
 
 For years, before we created Cloudy Calculator, we used Google's calculator on a daily basis in our work. And it was (and still is) really, really useful. (No more tedius unit conversions! It does all for you. Just type in your calculation like you would any other search. Very nice.) But we often ended up working through a long series of calculations and inevitibly we'd make a mistake somewhere along the way. Tracking down those mistakes was kind of painful because it's not so easy to look back through the history of your calculations. We wanted to be able to see all those calculations all at the same time in one place. That's why we created Cloudy Calculator.
-
-========
-New in 6.0
-* Faster!
-* Google OneBox results now used for some non-mathematical expressions (Example: How old is Barack Obama?)
-* Wolfram|Alpha support removed (at Wolfram's request). 
-To all of you who found the Woflram|Alpha support useful: We know. It's sad. But the Wolfram|Alpha site itself does a great job with more complex calculations. Go use it. It's really good.
-========
 
 Quick Tips  
 * Scrollable history of previous calculations 
