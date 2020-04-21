@@ -8,7 +8,7 @@
 			}
 		}
 		// All units are converted to these when doing calculations
-		var DIM = ["L", "M", "T"];
+		var DIM = ["L", "M", "T", "P", "E"];
 		var DEFAULT_DISPLAY_UNITS = {
 			"L1": "m",
 			"T1": "s",
@@ -16,7 +16,8 @@
 			"L1T-1": "m/s",
 			"L1T-2": "m/s^2",
 			"L2": "m^2",
-			"L3": "m^3"
+			"L3": "m^3",
+			"P1": "atm"
 		};
 		//------------------------------------------
 		var incompatibleDimError = new Error("Uh oh, incompatible dimensions.");
@@ -81,15 +82,23 @@
 			"mph":{dim:{L:1, T:-1}, factor:1609.344/3600, alias:["mph"]},
 			"kph":{dim:{L:1, T:-1}, factor:1000/3600, alias:["kph"]},
 
+			// Pressure
+			"atm":{dim:{P:1}, factor:1, alias:["atmosphere"]},
+			"pa":{dim:{P:1}, factor:1/101325, alias:["pascal"]},
+			"kpa":{dim:{P:1}, factor:1/101.325, alias:["kilopascal"]},
+			"torr":{dim:{P:1}, factor:1/760, alias:["torr", "mmhg"]},
+			"psi":{dim:{P:1}, factor:1/14.6959, alias:["psi"]},
+
+
 			// TEMPERATURE // NOTE: this doesn't seem to be working...
-			// "Celsius":{
-			// dim:{TEMP:1},
+			// "Farenheight":{
+			// dim:{E:1},
 			// factor:function (x) {return x + 273.15;},
 			// invFactor:function (y) {return y - 273.15},
 			// alias:["Farenheight", "farenheight", "F"]
 			// },
-			// "Farenheight":{
-			// dim:{TEMP:1},
+			// "Celsius":{
+			// dim:{E:1},
 			// factor:function (x) {return (x - 32)*9/5 + 273.15;},
 			// invFactor:function (y) {return (y - 273.15)*9/5 + 32;},
 			// alias:["Celsius", "celsius", "Centigrade", "centigrade", "C"]

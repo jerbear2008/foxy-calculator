@@ -820,84 +820,76 @@ var cCalc = (function (window, document) {
 			//stock
 			if (!docHtml) {
 				docHtml = $doc.find(".IsqQVc.NprOob").html();
-				console.debug(docHtml);
+			}
+
+			//conversion
+			if (!docHtml) {
+				console.debug($doc.find(".rpnBye"));
+				docHtml = $doc.find(".rpnBye").find(":input").html();
 			}
 
 			//currency
 			if (!docHtml) {
 				docHtml = $doc.find(".DFlfde.SwHCTb").html();
-				console.debug(docHtml);
 			}
 			//area
 			if (!docHtml) {
 				docHtml = $doc.find(".Z0LcW").html();
-				console.debug(docHtml);
 			}
 
 			//population
 			if (!docHtml) {
 				docHtml = $doc.find(".ayqGOc").html();
-				console.debug(docHtml);
 			}
 
 			// sidebar
 			if (!docHtml) {
 				docHtml = $doc.find(".kno-rdesc").html();
-				console.debug(docHtml);
 			}
 
 			//search result
 			if (!docHtml) {
 				docHtml = $doc.find(".LGOjhe").html();
-				console.debug(docHtml);
 			}
 
 			//distance between
 			if (!docHtml) {
 				docHtml = $doc.find(".BbbuR.uc9Qxb").html();
-				console.debug(docHtml);
 			}
 
 			//date
 			if (!docHtml) {
 				docHtml = $doc.find(".vk_bk").html();
-				console.debug(docHtml);
 			}
 
 			//calc
 			if (!docHtml) {
 				docHtml = $doc.find(".z7BZJb").html();
-				console.debug(docHtml);
 			}
 
 			//ip
 			if (!docHtml) {
 				docHtml = $doc.find(".MUxGbd.u31kKd").html();
-				console.debug(docHtml);
 			}
 
 			//weird
 			if (!docHtml) {
 				docHtml = $doc.find(".LwV4sf").html();
-				console.debug(docHtml);
 			}
 
 			//list
 			if (!docHtml) {
 				docHtml = $doc.find(".di3YZe").html();
-				console.debug(docHtml);
 			}
 
 			//rated
 			if (!docHtml) {
 				docHtml = $doc.find(".X5LH0c").html();
-				console.debug(docHtml);
 			}
 
 			//geometry
 			if (!docHtml) {
 				docHtml = $doc.find(".lr-fy-ev").html();
-				console.debug(docHtml);
 			}
 
 			if (docHtml) {
@@ -1355,11 +1347,11 @@ var cCalc = (function (window, document) {
 		var defaultOptions = {
 			zoom: 1,
 			width: "450px",
-			height: "400px",
-			resultFont: "times",
-			inputFont: "courier",
-			titleFont: "courier",
-			headerLinksFont: "arial"
+			height: "412px",
+			// resultFont: "times",
+			// inputFont: "Noto Mono",
+			// titleFont: "Noto Sans",
+			// headerLinksFont: "arial"
 		};
 		function setDefaultOptions() {
 			var key;

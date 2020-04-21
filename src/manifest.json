@@ -1,6 +1,6 @@
 {
 	"name": "Foxy Calculator",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"description": "A Firefox port of the popular Cloudy Calculator",
 	"manifest_version": 2,
 

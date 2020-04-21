@@ -14,10 +14,13 @@ All credit goes to the original author bwrobinett for writing this wonderful uti
 
 ===========
 
-Version 1.1.0
+Version 1.2.0
 
 * Add shortcut key
-* Add google sidebar results
+* Add more Google results
+* Add pressure conversions
+* Update jquery
+* Play with graphics
 
 ============
 
