@@ -2,7 +2,8 @@
 
 This is a firefox port of the popular Cloudy Calculator Chrome extension!
 In the process of porting this extension, I've fixed much of it's deprecated 
-functionality, including bringing google search results back online.
+functionality and even added some enhancements, such as bringing google search 
+results back online.
 
 To open the popup, click the pi icon or type Ctrl+Y
 
@@ -10,6 +11,15 @@ For bugs, problems, and feature requests, add an issue to the github.
 * https://github.com/anthonyebiner/foxy-calculator
 
 All credit goes to the original author bwrobinett for writing this wonderful utility.
+
+===========
+
+Version 1.1.0
+
+* Add shortcut key
+* Add google sidebar results
+
+============
 
 ## Original Description
 
