@@ -19,6 +19,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/units.js"></script>
 	<script src="js/init_calc.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body id="calc">
 <div id="calcWrapper" class="vbox">
@@ -62,8 +63,22 @@
 		<tr>
 			<td>
 				<div id="calcInputWrapper" class="boxFlex0">
-					<input type="text" id="calcInput" tabindex="1"/>
-					<div id="inputMarker">></div>
+					<input type="text" id="calcInput" tabindex="1" placeholder="> input text"/>
+					<button id="popUpButton" class="w3-button w3-teal" >Equation</button>
+					<div class="dropdown-content">
+						<table>
+							<tr>
+								<td>cos</td>
+								<td>sin</td>
+								<td>tan</td>
+							</tr>
+							<tr>
+								<td>&pi;</td>
+								<td>&radic;</td>
+								<td>n&sup2;</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</td>
 		</tr>
