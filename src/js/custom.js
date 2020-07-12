@@ -1,0 +1,18 @@
+$('#cos').click(function(e){
+    $('#calcInput').val("cos");
+})
+$('#sin').click(function(e){
+    $('#calcInput').val("sin");
+})
+$('#tan').click(function(e){
+    $('#calcInput').val("tan");
+})
+$('#pi').click(function(e){
+    $('#calcInput').val("pi");
+})
+$('#sqrt').click(function(e){
+    $('#calcInput').val("sqrt");
+})
+$('#square').click(function(e){
+    $('#calcInput').val("^2");
+})
