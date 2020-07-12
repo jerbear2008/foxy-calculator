@@ -59,22 +59,31 @@
 		<tr>
 			<td>
 				<div id="calcInputWrapper" class="boxFlex0">
-					<input type="text" id="calcalInput"/>
-					<button id="poppopUpButton" class="w3-button w3-teal" >Equation</button>
-					<div class="dropdown-content">
-						<table>
-							<tr>
-								<td id="cos">cos</td>
-								<td id="sin">sin</td>
-								<td id="tan">tan</td>
-							</tr>
-							<tr>
-								<td id="pi">&pi;</td>
-								<td id="sqrt">&radic;</td>
-								<td id="square">n&sup2;</td>
-							</tr>
-						</table>
-					</div>
+					<table width="98%">
+						<tr>
+							<td style="width: 95%">
+								<input type="text" id="calcInput" tabindex="1" placeholder="> input text"/></td>
+							<td style="width: 5%">
+								<div class="popUpDiv">
+									<button id="popUpButton" class="w3-button w3-teal" >Equation</button>
+									<div class="dropdown-content">
+										<table>
+											<tr>
+												<td id="cos">cos</td>
+												<td id="sin">sin</td>
+												<td id="tan">tan</td>
+											</tr>
+											<tr>
+												<td id="pi">&pi;</td>
+												<td id="sqrt">&radic;</td>
+												<td id="square">n&sup2;</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</td>
 		</tr>

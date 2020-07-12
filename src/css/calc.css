@@ -64,17 +64,17 @@ ul {list-style-type:none; margin-left:-15px;}
 	Input
 */
 #calcInput {
-	width:76%; margin:0px; padding-left:22px;
+	width:100%; margin:0px; padding-left:22px;
 	border:solid #3E5785 1px; background-color:#DDEAF9;
 	font-family: "Noto Mono"; font-size: 15px; line-height: 24px;
 	-webkit-box-sizing:border-box; -webkit-box-shadow: 0px 0px 3px black;
 }
 #popUpButton {
-	width:19%; line-height: 10px; font-size: 13px; text-align: left;
+	width:100%; line-height: 10px; font-size: 13px; text-align: left;
 	-webkit-box-sizing:border-box; -webkit-box-shadow: 0px 0px 3px black;
 }
 #poppopUpButton {
-	width:9%; line-height: 15px; font-size: 13px; text-align: left; text-align: center;
+	width:100%; line-height: 15px; font-size: 13px; text-align: left; text-align: center;
 	-webkit-box-sizing:border-box; -webkit-box-shadow: 0px 0px 3px black;
 }
 
@@ -111,7 +111,7 @@ ul {list-style-type:none; margin-left:-15px;}
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-.boxFlex0:hover .dropdown-content {
+.popUpDiv:hover .dropdown-content {
 	display: block;
 }
 /*
