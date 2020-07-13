@@ -16,3 +16,12 @@ $('#sqrt').click(function(e){
 $('#square').click(function(e){
     $('#calcInput').val("^2");
 })
+$('#deg').click(function(e){
+    $('#calcInput').val("degree");
+})
+$('#rad').click(function(e){
+    $('#calcInput').val("radian");
+})
+$('#fac').click(function(e){
+    $('#calcInput').val("!");
+})
