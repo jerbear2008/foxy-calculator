@@ -23,7 +23,9 @@ Version 1.2.0
 * Play with graphics
 
 Version 1.3.0
-*Add button for user to select the equation 
+
+* Add equation button
+
 ============
 
 ## Original Description
