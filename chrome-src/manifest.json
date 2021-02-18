@@ -1,7 +1,7 @@
 {
 	"name": "Cloudy Calculator",
 	"version": "1.2.0",
-	"description": "A chrome port of \"A Firefox port of the popular Cloudy Calculator/"",
+	"description": "A chrome port of \"A Firefox port of the popular Cloudy Calculator\"",
 	"manifest_version": 2,
 
 	"icons": {
